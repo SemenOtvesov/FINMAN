@@ -10,7 +10,11 @@ export default () => {
     if (regState === 'login') {
         return (
             <div className="popap-login__button-box">
-                <button type="submit" className="popap-login__button">
+                <button
+                    onClick={() => setRegState && setRegState(undefined)}
+                    type="submit"
+                    className="popap-login__button"
+                >
                     Войти
                 </button>
                 <button
@@ -40,7 +44,11 @@ export default () => {
     if (regState === 'reg') {
         return (
             <div className="popap-login__button-box">
-                <button type="submit" className="popap-login__button">
+                <button
+                    onClick={() => setRegState && setRegState(undefined)}
+                    type="submit"
+                    className="popap-login__button"
+                >
                     Зарегистрироваться
                 </button>
                 <button
