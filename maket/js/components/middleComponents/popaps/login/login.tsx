@@ -14,6 +14,7 @@ import useAppDispatch from '@js/hooks/useAppDispatch';
 
 export default () => {
     const { regState, setRegState } = useContext(LayoutContext);
+
     const {
         register,
         handleSubmit,
